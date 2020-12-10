@@ -84,9 +84,9 @@ impl Universe {
         count
     }
 
-    pub fn new() -> Universe {
-        let width = 64;
-        let height = 64;
+    pub fn new(w: u32, h: u32) -> Universe {
+        let width = w;
+        let height = h;
 
         let cells = (0..width * height)
             .map(|i| {
